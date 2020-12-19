@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styled.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title>Search Zip</title>
+</head>
+<body>
+
+      <nav class="navbar navbar-light bg-dark">
+            <a class="navbar-brand text-white">Search zip</a>
+            <div class="d-flex">
+              <input class="form-control me-2" id="zip" type="search" placeholder="00000000">
+              <button class="btn btn-outline-success" onclick="zipQuery()">Search</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-progress spinner">
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="container zip-div">
+          <div class="row">
+              <h3 id="title-zip"></h3>
+          </div>
+          <div class="row">
+             <table class="table table-dark table-striped">
+                 <tbody>
+                    <tr>
+                        <td>Adress: </td>
+                        <td id="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Neighborhood: </td>
+                        <td id="neighborhood"></td>
+                    </tr>
+                    <tr>
+                        <td>Locality: </td>
+                        <td id="locality"></td>
+                    </tr>
+                    <tr>
+                        <td>UF: </td>
+                        <td id="uf"></td>
+                    </tr>
+                 </tbody>
+             </table>
+          </div>
+      </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
